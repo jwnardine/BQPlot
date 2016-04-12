@@ -1,53 +1,61 @@
+{{START-SCREEN}}
+
 You are Wanda from the first Burrito Quest. Randy has wronged you. You heard that Randy was at a party thrown by Steve the ambulance driver. You have just arrived at the party. WHAT DO?
 
 A) Talk to Steve, the ambulance driver
 B) Do a kegstand
 
-IF DO A KEGSTAND
+IF DO A KEGSTAND {{kegstand-1}}
 
 You decide perhaps the best way to blend in with the crowd is to participate in a kegstand. You ask for volunteers to hold your legs. The protagonist from the first Burrito Quest appears! He says "Hi, I'm the protagonist from the first Burrito Quest. Can I hold your legs for you?" "Why certainly, bitch!" you growl. "How long of a kegstand are you looking to do?" WHAT DO?
 
-A) Respond "28 seconds!" - You survive
-B) Respond "29 seconds!" - Get trophy! ***
-C) "As long as your weakass man arms can take it, baby!" - YOU DIE
+A) Respond "28 seconds!" - You survive {{kegstand-2}}
+B) Respond "29 seconds!" - Get trophy! *** {{kegstand-3}}
+C) "As long as your weakass man arms can take it, baby!" - YOU DIE {{kegstand-death}}
 
+{{kegstand-2}}
 As you flip right side up from the kegstand, you notice a Magic Eye book and set of sunglasses poking out of the protagonist from the first Burrito Quest's pockets. "Wow, that was fun," says the protagonist. "Now who else wants me to hold their legs for a kegstand?" A random girl emerges from the crowd - "I do, protagonist! You're too kind." He lifts up the girl's feet, only partially paying attention to you. WHAT DO?
 
-A) Ask the protagonist about Randy
+{{kegstand-3}}
+put something here
+
+A) Ask the protagonist about Randy {{ask-randy-1}}
 B) Steal Magic Eye book from protagonist ***
 C) Steal sunglasses from protagonist ***
-D) Go talk to Steve, the ambulance driver
+D) Go talk to Steve, the ambulance driver {{talk-steve}}
 
-IF ASK PROTAGONIST ABOUT RANDY
+IF ASK PROTAGONIST ABOUT RANDY {{ask-randy-1}}
 
 "Oh, you mean Randy Shmeckles? I heard he was coming tonight, but I haven't seen him yet."
 
+{{talk-steve}}
+
 You shuffle your way over to Steve, the ambulance driver. He sees you approaching, and visibly tightens up a bit. "H-h-hey Wanda. What do you want?"
 
-A) Ask if you can have his wallet, "Just to borrow"
+A) Ask if you can have his wallet, "Just to borrow" ***
 B) Ask if he has drugs. Steve the ambulance driver always has drugs. ***
-C) Ask about Randy
+C) Ask about Randy {{ask-randy-2}}
 
-IF ASK FOR DRUGS
+IF ASK FOR DRUGS {{ask-drugs}}
 
 "Why sure I have drugs. After all, I'm Steve the ambulance driver! Oh shoot, I think all I got left is this mystery variety sack I got of the street for $12. I'm nervous to use them, but if it'll get you to leave me alone, they're all yours!" He hands you the sack.
 
-A) Take drugs immediately - DEAD
-B) Ask about Randy
+A) Take drugs immediately - DEAD {{take-drugs-death}}
+B) Ask about Randy {{ask-randy-2}}
 C) Ask if you can have his wallet ***
 
-IF ASK FOR WALLET
+IF ASK FOR WALLET {{steal-wallet}}
 
 "You know what, Wanda? You're so terrifying to me that I will 100% give you my wallet if it means staying on your good side. Just let me grab my bus pass out of it real quick." Steve takes his bus pass out of the wallet and hands it to you. Wow, that was easy.
 
-A) Take drugs immediately - DEAD
-B) Ask about Randy
+A) Take drugs immediately - DEAD {{take-drugs-death}}
+B) Ask about Randy {{ask-randy-2}}
 
-IF ASK ABOUT RANDY
+IF ASK ABOUT RANDY {{ask-randy-2}}
 
 "Do you know if Randy's here?" "Yeah, he just showed up actually! I think he's out in the backyard. But he won't be around forever, he's got a lateshift at the hospital tonight. I think he's reading Charlotte's Web to the children in the cancer ward!"
 
-IF HAVE DRUGS
+IF HAVE DRUGS {{}}
 
 A) Go outside and approach Randy
 B) Crouch behind the microwave to peek out the window and watch Randy
@@ -102,10 +110,103 @@ D) Enter hospital
 
 IF BRIBE KID
 
-"Hey kid, I'll give you $14 for your slingshot. That money could probably go towards your cancer treatment!" "First of all, I am 57 years old. Second, I don't have cancer, I just have male pattern baldness. I was going to give this as a present to my nephew, but I could sure use the money. I'm gonna net $4! Here's my slingshot! Take good care of it." You respond "Oh, I WILL." 
+"Hey kid, I'll give you $14 for your slingshot. That money could probably go towards your cancer treatment!" "First of all, I am 57 years old. Second, I don't have cancer, I just have male pattern baldness. I was going to give this as a present to my nephew, but I could sure use the money. I'm gonna net $4 out of this transaction! Here you go, have the slingshot! Take good care of it." You respond "Oh, I WILL."
 
 A) Put on sunglasses
 B) Bribe the cop for his shiny gun - DEAD
 C) Enter hospital
 
 IF GO INTO HOSPITAL WITHOUT SUNGLASSES
+
+You stealthily enter the ward lobby. Right behind the front desk is Randy in a doctor's coat, filling out an important-looking form on an important-looking clipboard. He glances up at you, his peripheral vision drawn to your cyan poncho. He notices that it's YOU wearing the cyan poncho. He points and screams "I THOUGHT YOU WERE DEAD!" He frisbees the clipboard and it dings you right in the forehead. "I WATCHED YOU DIE!" As you recover from the clipboard attack, Randy vanishes down a a hospital corridor. You never see him again. GAME OVER
+
+IF GO INTO HOSPITAL WITH SUNGLASSES
+
+You stealthily enter the ward lobby. Right behind the front desk is Randy in a doctor's coat, filling out an important-looking form on an important-looking clipboard. He glances up at you, his peripheral vision drawn to your cyan poncho. Thanks to your sunglasses disguise, he doesn't seem to notice that it's you, Wanda, staring back at him. He looks back down at the clipboard, makes a signature-writing motion with his pen, and then turns and heads through a door down the hall. This might be your chance...
+
+A) Follow Randy into room.
+
+IF GO INTO ROOM WITHOUT ANYTHING
+
+You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time. You grin an evil grin and respond "And now I'll watch YOU die." Without a weapon, you have no choice but try and kill Randy with your bare hands. You wrap his hands around his neck. There is a struggle. In a desperate attempt to gain the upper hand, Randy reaches for his hardcover copy of Charlotte's Web and bludgeons you to death. Right before you take your last breath, you wheeze "now...I'll never...get my..burrito back!" GAME OVER
+
+IF GO INTO ROOM WITH SLINGSHOT BUT NO DRUGS
+
+You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time. You grin an evil grin and respond "And now I'll watch YOU die." You pull out your slingshot, draw it back, and fire nothing at him. It is not effective. As you attempt to reload nothing into your slingshot, Randy picks up the phone and dials security. A big beefy security lady charges into the room and tackles you to the ground. Randy sighs with relief "Thank GOD you were here to help. That woman you tackled is Wanda and she's absolutely bonkers!" Security lady locks you up in handcuffs and escorts you forcefully to the police officer outside. The officer says with pain in his voice "Why did you want to attack that man? He was good people." You mumble in response, "I just wanted my burrito back." GAME OVER
+
+IF GO INTO ROOM WITH TROPHY AND SLINGSHOT BUT NO DRUGS
+
+You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time. Randy quickly picks up the phone and dials security. "HELP! THERE'S A WOMAN IN HERE TRYING TO KILL-" you cut him off with a swift blow to the head with your beloved kegstand trophy!
+
+IF GO INTO ROOM WITH DRUGS BUT NO SLINGSHOT
+
+You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time. You pull out your bag of drugs, and grab a handful "I'm gonna force these down your throat!" Randy laughs and responds "Wanda, you have like zero upper body strength. I'd like to see you try." COME BACK HERE
+
+IF GO INTO ROOM WITH TROPHY AND DRUGS BUT NO SLINGSHOT
+
+You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time.
+
+IF GO INTO ROOM WITH SLINGSHOT AND DRUGS
+
+You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time.
+
+IF MAGIC EYE AND INCAPACITATED RANDY
+
+You're standing over Randy's unconscious body. You take off his jacket, putting it on to conceal your identity. You spot a wheelchair in the corner, and a gurney. WHAT DO?
+
+A) Wheelchair
+B) Gurney
+
+IF WHEELCHAIR
+
+You grab the wheelchair and haul his body into it, putting on the sunglasses as a totally convincing disguise. You wheel Randy out towards the entrance of the hospital, and see the security guard by the door. WHAT DO?
+
+A) Try to trick the Security guard with the magic eye book
+B) Try and make a run for it
+
+IF WHEELCHAIR
+
+You grab the gurney and haul his body onto it, covering it with a sheet and putting on the sunglasses as a totally convincing disguise. You wheel Randy out towards the entrance of the hospital, and see the security guard by the door. WHAT DO?
+
+A) Try to trick the Security guard with the magic eye book
+B) Try and make a run for it - DEAD
+
+BACK AT WANDAS HOUSE IF DEAD
+
+You wheel the Randy all the way back to your place, about 5 miles, mostly uphill. You go to transfer his body and realize that it is cold to the touch. Uh oh, he is super dead. Now you will never be able to get the burrito he owed you. GAME OVER
+
+BACK AT WANDAS HOUSE IF ALIVE
+
+You wheel Randy all the way back to your place, about 5 miles, mostly uphill. You chain Randy's unconscious body to the fridge. While you wait for Randy to come to, you begin to arrange all sorts of burrito ingredients out in front of him. When Randy finally comes to, he begins to look around and eventually focuses in on you. "Randy, it is time for you to pay for wronging me. You will now construct a most delicious burrito for me." Randy replies "Wanda, how did I ever wrong you?". "Randy, do you remember March 23rd, 2012? It was on that day, that you threw away my burrito." "Wanda, that was a crusty, half-eaten burrito, and it had been in the fridge for 2 weeks. It was covered in mold." "I DON'T CARE IF IT HAD A MOLD HAT. YOU RUINED MY LIFE." "Wanda, you need to let it go." "Right after you fix this..." "I only lived with you for two weeks, I don't even know you." "Well, I certainly know YOU. Inside and out." "Oh really? Prove it."
+
+PROVE IT
+
+1) What are Randy's dogs' names?
+
+A) Peanut-butter and Jelly
+B) Mac and Cheese
+C) Chicken and Waffles
+
+2) What is Randy's last name?
+
+A) Schneider
+B) Shiller
+C) Schmeckles
+
+3) What book does Randy read to the cancer children?
+
+A) Charlotte's Web
+B) Black Beauty
+C) Dante's Inferno
+
+As you correctly answer Randy's absurd questions, he caves to your demands and begins constructing your burrito.
+
+He lays a tortilla in a pan on the stove and warms it up.
+
+He adds the cheese and meat and begins to warm them.
+
+He adds the rice, beans, pico de gallo, guac, and sour cream and rolls it into a tight cylinder. You feel like this gesture is not enough. You go to your table and grab the pair of scissors next to your cactus. You slice Randy's jugular, untie him, and toss him into your closet. You feel yourself getting sleepy, and lay down to take a nap. LE FIN.
+
+OR
+
+You fail his quiz. "YOU DON'T KNOW ME!" Randy yells. "I don't owe you anything. I'd rather die than make you a burrito." "Have it your way," you shrug. You reach for the pair of scissors on your table next to your cactus and slice his jugular. You untie Randy and toss him into your closet. You feel hungry. Man, you could really go for a burrito. THE (UNSATISFYING) END
